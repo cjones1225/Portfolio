@@ -18,7 +18,7 @@ $(window).on('resize scroll', function(e) {
         $('a[href$="#bio"]').removeClass('active')
         $('a[href$="#projects"]').addClass('active')
         $('a[href$="#contact"]').removeClass('active')
-      } else if ($('#contact').isInViewport()) {
+      } else if ($('#contact').isInViewport() && !$('#projects').isInViewport()) {
         $('a[href$="#bio"]').removeClass('active')
         $('a[href$="#projects"]').removeClass('active')
         $('a[href$="#contact"]').addClass('active')
