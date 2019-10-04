@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav {
+    width: 25%;
+    height: 100%;
+    background-blend-mode: color;
+    background-image: linear-gradient(115deg, rgb(255, 255, 255), rgba(189, 189, 189, 1));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: left;
+    position: fixed;
+}
+.tab{
+    width: 62.5%;
+    height: 6%;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    width: 75%;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #787878;
+}
+a.quiz {
+    display: flex;
+    align-self: center;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a.tab:hover {
+    background-blend-mode: color;
+    background-image: linear-gradient(-90deg, white, rgba(209, 209, 209, 0.91));
+}
+.active {
+    background-blend-mode: color;
+    background-image: linear-gradient(-90deg, white, rgba(209, 209, 209, 0.91));
+}
+a.contact {
+    display: flex;
+    align-self: center;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container#contact {
+    margin-top: 10%;
+}
+p.bio {
+    width: 75%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    font-family: "Courier";
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #787878;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+}
+h1.projects{
+    margin-top: 5%;
+}
+img {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+p.projects {
+    width: 75%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    font-family: "Courier";
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+    p.bio {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .nav {
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .tab {
+        width: 60%;
+        height: 8%;
+        display: flex;
+        align-self: center;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #787878;
+        margin-right: auto;
+        margin-left: auto;
+        align-self: center;
+    }
+    h1.projects{
+        margin-top: 15%;
+    }
+    .container {
+        width: 70%;
+        height: 100%;
+        /*border: 1px solid black;*/
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    p.bio {
+        width: 100%;
+        height: 100%;
+        margin-right: auto;
+        /*margin-top: 25%;*/
+        margin-left: auto;
+        margin-bottom: auto;
+        font-size: 18px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        justify-content: center;
+    }
+    p.projects {
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+        /*margin-top: 10%;*/
+        font-size: 18px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .nav {
+        width: 100%;
+        height: 11%;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .tab {
+        width: 25%;
+        height: 60%;
+        display: flex;
+        align-self: center;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #787878;
+        margin-right: auto;
+        margin-left: auto;
+        align-self: center;
+    }
+    h1.projects{
+        margin-top: 25%;
+    }
+    .container {
+        width: 100%;
+        height: 90%;
+        /*border: 1px solid black;*/
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    p.bio {
+        width: 100%;
+        height: 80%;
+        margin-right: auto;
+        margin-top: 30%;
+        margin-left: auto;
+        margin-bottom: auto;
+        font-size: 12px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        justify-content: center;
+    }
+    p.projects {
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+        /*margin-top: 10%;*/
+        font-size: 12px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .nav {
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .tab {
+        width: 20%;
+        height: 60%;
+        display: flex;
+        align-self: center;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #787878;
+        margin-right: auto;
+        margin-left: auto;
+        align-self: center;
+    }
+    h1.projects{
+        margin-top: 25%;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        /*border: 1px solid black;*/
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    p.bio {
+        width: 100%;
+        height: 80%;
+        margin-right: auto;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-bottom: auto;
+        font-size: 10px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        justify-content: center;
+    }
+    p.projects {
+        width: 100%;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10%;
+        font-size: 12px;
+        font-family: "Courier";
+        font-weight: 400;
+        text-align: center;
+        align-self: center;
+    }
+}
